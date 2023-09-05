@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="icon" href="./src/imagens/digimonlogo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/digimonlogo2.png">
+    </header>
+
+    <main class="digiselecao">
+        <section class="criancas">
+            <h1 class="titulo">
+                Escolha um Digiescolhido
+            </h1>
+            <ul class="lista-de-criancas">
+                <li class="crianca selecionada" id="taichi" data-name="Taichi" data-description="...">
+                    <img src="src/imagens/card-taichi.png" alt="Criança Taichi">
+                </li>
+
+                <li class="crianca" id="yamato" data-name="Matt" data-description="...">
+                    <img src="src/imagens/card-yamato.png" alt="Criança Matt">
+                </li>
+
+                <li class="crianca" id="sora" data-name="Sora" data-description="...">
+                    <img src="src/imagens/card-sora.png" alt="Criança Sora">
+                </li>
+
+                <li class="crianca" id="izumi" data-name="Izzy" data-description="...">
+                    <img src="src/imagens/card-izumi.png" alt="Criança Izzy">
+                </li>
+
+                <li class="crianca" id="mimi" data-name="Mimi" data-description="...">
+                    <img src="src/imagens/card-mimi.png" alt="Criança Mimi">
+                </li>
+
+                <li class="crianca" id="joe" data-name="Joe" data-description="...">
+                    <img src="src/imagens/card-joe.png" alt="Criança Joe">
+                </li>
+
+                <li class="crianca" id="takeru" data-name="Takeru" data-description="...">
+                    <img src="src/imagens/card-takeru.png" alt="Criança Takeru">
+                </li>
+
+                <li class="crianca" id="hikari" data-name="Kari" data-description="...">
+                    <img src="src/imagens/card-hikari.png" alt="Criança Kari">
+                </li>
+            </ul>
+
+            <button class="troca" onclick="pegarDigimons()">
+                Trocar para Digimons
+            </button>
+            
+            
+            
+
+        </section>
+
+
+        <section class="digimons">
+            <h1 class="titulo">
+                Escolha um Digimon
+            </h1>
+            <ul class="lista-de-digimons">
+                <li class="digimon selecionada" id="agumon" data-name="Agumon" data-description="...">
+                    <img src="src/imagens/card-agumon.png" alt="Digimon Agumon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="gabumon" data-name="Gabumon" data-description="...">
+                    <img src="src/imagens/card-gabumon.png" alt="Digimon Gabumon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="piyomon" data-name="Piyomon" data-description="...">
+                    <img src="src/imagens/card-piyomon.png" alt="Digimon Piyomon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="tentomon" data-name="Tentomon" data-description="...">
+                    <img src="src/imagens/card-tentomon.png" alt="Digimon Tentomon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="palmon" data-name="Palmon" data-description="...">
+                    <img src="src/imagens/card-palmon.png" alt="Digimon Palmon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="gomamon" data-name="Gomamon" data-description="...">
+                    <img src="src/imagens/card-gomamon.png" alt="Digimon Gomamon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="patamon" data-name="Patamon" data-description="...">
+                    <img src="src/imagens/card-patamon.png" alt="Digimon Patamon" onclick="digivolver()">
+                </li>
+
+                <li class="digimon" id="tailmon" data-name="Tailmon" data-description="...">
+                    <img src="src/imagens/card-tailmon.png" alt="Digimon Tailmon" onclick="digivolver()">
+                </li>
+            </ul>
+
+            <button class="troca" onclick="pegarCriancas()">
+                Trocar para Digiescolhidos
+            </button>
+
+        </section>
+
+        <section class="digivolucoes">
+            <h1 class="titulo">
+                Escolha uma Digivolução
+            </h1>
+            <ul class="lista-de-digivolucoes">
+                <li class="digivolucao selecionada" id="agumon" data-name="Agumon" data-description="...">
+                    <img src="src/imagens/agumon-medio.png">
+                </li>
+
+                <li class="digivolucao" id="greymon" data-name="Greymon" data-description="...">
+                    <img src="src/imagens/greymon-medio.png" alt="Digimon Greymon">
+                </li>
+
+                <li class="digivolucao" id="metalgreymon" data-name="Metalgreymon" data-description="...">
+                    <img src="src/imagens/metalgreymon-medio.png">
+                </li>
+
+                <li class="digivolucao" id="wargraymon" data-name="Wargreymon" data-description="...">
+                    <img src="src/imagens/wargraymon-medio.png">
+                </li>
+                </ul>
+
+                <button class="troca" onclick="digiVoltar()">
+                    Trocar para Digimons
+                </button>
+        </section>
+
+        <section class="crianca-selecionada">
+
+            <img class="imagem-grande" src="./src/imagens/taichi-grande.png" alt="Criança Selecionada">
+
+            <div class="informacoes-criancas">
+                <h2 class="nome-crianca" id="nome-crianca"> Taichi </h2>
+                <p class="descricao-crianca" id="descricao-crianca"> ... </p>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
